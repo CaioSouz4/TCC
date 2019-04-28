@@ -1,0 +1,451 @@
+
+\chapter{PROTOCOLO DA REVISÃO SISTEMÁTICA}
+\label{sec:protocolo}       
+
+O protocolo de uma revisão sistemática da literatura especifica os métodos que serão empregados para realizar a revisão. De acordo com \cite{kitchenham}, um protocolo bem definido é necessário para reduzir a possibilidade de viés do pesquisador. Por exemplo, sem um protocolo, é possível que a seleção de
+estudos ou a análise seja conduzida segundo as expectativas do pesquisador. Nas próximas seções, são descritos os campos desse protocolo.
+
+A definição do protocolo utilizado nessa pesquisa seguiu as \textit{guidelines} de \cite{kitchenham}. O protocolo, que foi definido utilizando a ferramenta \textit{Parsifal}, é detalhado nas próximas seções.
+
+\section{Definição do objetivo} 
+    
+O objetivo desta revisão é identificar estudos que descrevam fatores que influenciam a comunicação de requisitos no processo de desenvolvimento de software.
+%diretamente ou indiretamente na comunicação de requisitos.
+
+
+\section{Perguntas de Pesquisa} \label{sec:RQs}
+
+
+O critério PICOC (População, Intervenção, Comparação, Resultado e Contexto), do inglês \emph{Population, Intervention, Comparison, Outcome, Context}, foi utilizado para direcionar a definição das perguntas de pesquisa. 
+
+\begin{itemize}
+\item\textbf{População:} Publicações revisadas aos pares que descrevem fatores que influenciam a comunicação de requisitos no processo de desenvolvimento de software.
+\item\textbf {Intervenção:} Coletar evidências empíricas em relação aos fatores que influenciam a comunicação de requisitos.
+\item\textbf {Comparação:} Não se aplica, pois os estudos primários não serão comparados. 
+\item\textbf {Resultados:} Respostas para as perguntas de pesquisa.
+\item\textbf {Contexto:} Engenharia de Software desde que \emph{stakeholders} comuniquem requisitos.
+\end{itemize}
+
+Considerando o objetivo dessa revisão e o critério PICOC, pretende-se responder as perguntas de pesquisa apresentadas na Tabela \ref{tab:rqs}.
+
+        \begin{table}[h!]
+        \centering
+        \caption{Perguntas de pesquisa.}
+        \begin{tabular}{p{12cm}}
+        
+        \hline
+        
+P1. Quais são os stakeholders envolvidos? \\\hline
+P2. Quais são os problemas de comunicação reportados no estudo?\\\hline
+P3. Quais são os fatores de comunicação apontados no estudo?\\\hline
+P4. Qual o impacto do fator de comunicação?\\\hline
+P5. O fator interfere em qual aspecto do processo de comunicação?\\\hline
+
+
+        \label{tab:rqs}
+        \end{tabular}
+         \legend{Fonte: Elaborado pelo autor}
+        \end{table}        
+
+\section{String de Busca}
+
+A \emph{string} de busca foi definida considerando os principais termos dos conceitos sob investigação. As palavras-chave são listadas na Tabela \ref{tab:keywords}.
+
+        \begin{table}[h!]
+        \centering
+        \caption{Palavras chave.}
+        \label{tab:keywords}
+        \begin{tabular}{p{5cm}p{9cm}}
+        \hline
+        \textbf{Conceito}  & \textbf{Palavras-chave}   \\ \hline
+        Problemas de comunicação                               & Communication Challenges, Communication Risk, Requirements Issues, Requirements communication       \\ \hline
+        Fatores & Factor, Action, Characteristic, Feature, Practice \\ \hline
+        Requirement &Requirement, Functional Requirement, Functionality \\\hline
+        
+        \end{tabular}
+         \legend{Fonte: Elaborado pelo autor}
+        \end{table}
+  
+        Pesquisas piloto foram realizadas de maneira iterativa para refinar a \emph{string} de busca. Foram excluídas palavras-chave cuja inclusão não retornou documentos adicionais nas pesquisas automáticas. Após várias iterações, a seguinte \emph{string} foi usada para pesquisar nas palavras-chave, título, resumo e texto completo das publicações:
+
+\emph{        
+(“communication challenge” OR “communication problem” OR “communication
+risk” OR “requirements issue” OR “requirements communication”) AND (“factor” OR “action”
+OR “characteristic” OR “feature” OR "practice”) AND (“software engineering”) AND (“software
+development”) AND (“requirement” OR “functional requirement” OR “functionality”)
+}
+\newpage
+
+\section{Bases de dados}\label{sec:bases}
+
+As bases de dados que foram utilizadas para a seleção dos artigos são descritas na Tabela \ref{tab:bases}.
+
+
+\begin{table}[h]
+\centering
+\caption{Bases utilizadas na pesquisa.}
+\begin{center}
+\scriptsize
+\label{base_de_pesquisa}
+\begin{tabular}{p{5.0cm}p{5.0cm}}
+\hline
+
+\textbf{Nome}
+&\textbf{URL}\\
+
+\hline
+ACM Digital Library &	http://portal.acm.org\\ 
+IEEE Digital Library &	http://ieeexplore.ieee.org\\ 
+Science@Direct &	http://www.sciencedirect.com \\	 
+Scopus &	http://www.scopus.com \\
+\hline
+ 
+\end{tabular} 
+
+\legend {\fontsize{10}{12}\selectfont {Fonte: Autor.}}
+\end{center}
+\label{tab:bases}
+\end{table}
+
+
+       \section{Critérios de seleção}
+        \label{sec:criterios}
+        
+            Os critérios de seleção foram utilizados para determinar se um trabalho deve ou não ser incluído na revisão. Esses critérios estão descritos na Tabela \ref{tab:criterios}.
+        
+\begin{comment}
+
+\begin{itemize}
+            \item Estudos primários.
+               \item Estudos publicado em qualquer ano até julho de 2018.
+               \item Estudos que abordam nos objetivos comunicação de requisitos. 
+               \item Estudos que relacionam requisitos e comunicação.
+              
+           \end{itemize}
+    
+            Da mesma forma, será adotado os seguintes critérios para exclusão:
+      
+            \begin{itemize}
+                \item Artigos curtos (\emph{short papers}) com menos de quatro páginas.
+                \item Estudos duplicados.
+                \item Estudos incompletos.
+                \item Estudos secundários.
+                \item Estudos redundantes da mesma autoria.
+                \item Estudos claramente irrelevantes para a pesquisa, levando em consideração as questões de pesquisa.
+                \item Estudos cujo foco não se relaciona a comunicação de requisitos.
+                \item Estudos cujo texto não esteja disponível.
+                \item Literatura cinza (teses, dissertações, monografias, etc).
+                \item Estudos não escritos em inglês.
+            \end{itemize}
+            
+\end{comment}            
+        
+
+        \begin{table}[h!]
+        \centering
+        \caption{Critérios de inclusão e exclusão.}
+        \label{tab:criterios}
+        \footnotesize
+        \begin{tabular}{p{6cm}p{6cm}}
+        \hline
+        \textbf{Critérios de inclusão}  & \textbf{Critérios de exclusão}   \\ \hline
+        Estudos primários                               & Estudos curtos (\emph{short papers}) com menos de quatro páginas.       \\ \hline
+        Estudos publicados em qualquer ano até julho de 2018. & Estudos duplicados. \\ \hline
+        Estudos que abordam nos objetivos comunicação de requisitos.  &Estudos incompletos. \\\hline
+        Estudos que relacionam requisitos e comunicação.  & Estudos secundários. \\\hline
+        
+        Estudos que respondam alguma pergunta de pesquisa.   & Documento redundante da mesma autoria.\\\hline
+                                                         & Estudos claramente irrelevantes para a pesquisa, levando em consideração as questões de pesquisa.\\\hline
+                                                         & Estudos cujo foco não relaciona-se a comunicação de requisitos.\\\hline
+                                                         & Estudos cujo texto completo não esteja disponível.\\\hline
+                                                         & Literatura cinza (teses, dissertações, monografias, etc).\\\hline
+                                                         & Estudos não escritos em inglês.\\\hline
+                                                        
+        
+        \end{tabular}
+        \legend{Fonte: Elaborado pelo autor}
+        \end{table}
+  \begin{comment}
+  
+  \section{Critérios de avaliação de qualidade}
+        
+        A avaliação da qualidade é crítica em uma revisão sistemática para investigar se diferenças de qualidade nos artigos selecionados fornecem uma explicação para as diferenças nos resultados obtidos \cite{kitchenham}. Este trabalho considera que a qualidade se relaciona com a medida em que o estudo minimiza o viés e maximiza a validade e credibilidade, por meio dos critérios descritos na Tabela \ref{tab:quality}.
+        
+       
+\begin{table*}[h!]
+ \centering
+     \scriptsize
+ \caption{Critérios de avaliação da qualidade do estudo.}
+ \begin{tabular}{p{10cm}p{0.5cm}p{0.5cm}p{0.5cm}p{0.5cm}p{0.5cm}}
+ \hline
+ \textbf{Critério} & \textbf{Eva}	& \textbf{Val} & \textbf{Sol} & \textbf{Exp} & \textbf{Op}\\
+ \hline
+ Q1. Possui uma declaração clara dos objetivos da pesquisa? &x	&x	&x	&x\\
+ \hline
+Q2. A técnica proposta é  descrita claramente? & & &x	& \\
+ \hline
+ Q3. Há uma descrição adequada do contexto (indústria, ambiente de laboratório, produtos utilizados e assim por diante) em que a pesquisa foi realizada? 	&x	&x	& & \\
+ \hline	
+
+
+
+
+
+Q1. Existe discussão sobre os resultados do estudo? 	&x	&x	&x &\\
+ \hline	
+Q2. As limitações do artigo são explicitamente discutidas? &x	&x	&x	&\\
+ \hline
+Q3. As lições aprendidas são interessantes? & & & &x\\
+ \hline
+Q4.  O artigo é relevante para os profissionais da indústria?	&x	&x	&x	&x\\
+ \hline
+Q5. Há discussão suficiente sobre trabalhos relacionados? (As técnicas concorrentes são discutidas e comparadas com a técnica atual?)	&x	&x	&x	&\\
+ \hline
+Q6. Os participantes do estudo ou unidades de observação são descritos adequadamente? Por exemplo, experiência em Engenharia de Software, tipo (estudante, profissional, consultor), nacionalidade, experiência em tarefas e outras variáveis relevantes. &x	&x & &\\
+ \hline		
+
+Q7. O estudo amplia suficientemente o conhecimento sobre comunicação de requisitos no processo de desenvolvimento de software?	&x	&x	&x	&x\\
+ \hline	
+Q8. O posicionamento sobre o tema é adequado?	&	&	&	& & x\\
+ \hline	
+Q9. É provável que provoque discussão sobre o tema?	&	& &  &	&x\\
+ \hline	
+
+Q10. Quão claras são as hipóteses/concepções teóricas/valores que moldaram as configurações e as opiniões descritas?	&	&	&	& & x\\
+ \hline
+ \end{tabular}%
+ \legend{Fonte: Adaptado de \cite{vilela2017integration}.}
+ \label{tab:quality}%
+\end{table*}%
+
+        A avaliação da qualidade dos artigos foi realizada por meio de uma técnica de pontuação para avaliar a credibilidade, completude e relevância dos estudos selecionados. Os artigos serão avaliados em relação a um conjunto de 10 critérios de qualidade proposto por \cite{vilela2017integration}.
+        
+        O trabalho diferencia os estudos em cinco categorias: artigos de avaliação (\emph{Evaluation Research Papers} - EVA); artigos de validação (\emph{Validation Research} Papers - VAL); Propostas de solução (\emph{Solution Proposal Papers} - SOL); Relatos de experiência (\emph{Experience Papers} - EXP); e artigos de opinião (\emph{Opinion Papers} - OP). %Os critérios são descritos na Tabela \ref{tab:quality}.
+        
+        Cada critério da avaliação de qualidade possui três respostas possíveis: ``Sim'' (pontuação = 1), ``Parcialmente'' (pontuação = 0,5) ou ``Não'' (pontuação = 0). Consequentemente, o grau de qualidade de um artigo é calculado considerando a soma das pontuações das respostas para as questões relacionadas ao seu tipo de pesquisa.
+\end{comment}  
+   
+\section{Formulário de extração de dados}
+    
+     Para guardar todas as informações necessárias para responder às perguntas da pesquisa foi preparado o formulário de extração de dados apresentado na Tabela \ref{tab:extraction}.
+    
+    \begin{table}[h]
+    \centering
+    \scriptsize
+    \caption{Formulário de extração dos dados.}
+    \label{tab:extraction}
+    \begin{tabular}{p{5cm}p{6cm}p{4cm}}
+    \hline
+    \textbf{Dado} & \textbf{Descrição}  & \textbf{Pergunta de Pesquisa}\\ \hline
+    Autores, ano, título     &  &Visão Geral dos estudos  \\ \hline
+    Origem do trabalho       & IEEE, ACM, Springer, Scopus, Science Direct    \\ \hline
+  
+   Stakeholders envolvidos & &P1  \\ \hline
+    
+    Fator  de comunicação   & &P2 \\ \hline
+    
+    Impacto do fator de comunicação & &P3 \\ \hline
+   
+    Aspecto do processo de comunicação afetado & &P4 \\ \hline
+   
+    Canal de comunicação utilizado & &P5 \\ \hline
+   
+  
+    \end{tabular}
+    \legend{Fonte: Elaborado pelo autor.}
+    \end{table}
+        
+\section{Procedimento para seleção de estudos}
+
+        O procedimento de seleção de estudos consistiu em cinco etapas principais. Na primeira, os estudos foram consultados e obtidos por meio de busca automática usando a \emph{string} de pesquisa nas bases de dados apresentadas na Tabela \ref{tab:bases}. Os resultados das buscas foram armazenados na ferramenta Parsifal.
+
+        A segunda etapa consistiu na eliminação de artigos duplicados. Em seguida, no passo 3, houve a seleção dos estudos primários obtidos na etapa anterior por meio da leitura de título e \emph{abstract} usando os critérios de inclusão e exclusão descritos na Seção \ref{sec:criterios}. Se houve dados insuficientes ou dúvidas, o artigo seguiu para o próximo passo.
+        
+        O quarto passo consistiu na leitura completa dos artigos para responder as perguntas de pesquisa usando o formulário de extração da Tabela \ref{tab:extraction}.
+      
+    \section{Ameaças à validade} 
+        
+        A classificação de ameaças à validade descrita por \cite{Wohlin2000} foi utilizada para discutir as ameaças deste trabalho. Esta classificação define quatro tipos de ameaças de validade, sendo elas, ameaças de conclusão, internas, de construção e de validade externa.
+        
+        \emph{Ameaças à validade de constructo:} Este tipo de validade diz respeito à generalização do resultado para o conceito ou teoria por trás da execução do estudo. Com o objetivo de minimizar ameaças dessa natureza, foi utilizado sinônimos para as principais palavras chaves.
+        
+       \emph{Ameaças de validade interna:} estão relacionadas a uma possível conclusão errada sobre as relações causais entre o tratamento e o resultado \cite{Wohlin2000}. Decisões subjetivas podem ocorrer durante a seleção de artigos e extração de dados uma vez que é comum estudos primários não fornecerem uma descrição clara ou objetivos e resultados apropriados, dificultando a aplicação objetiva dos critérios de inclusão/exclusão ou a imparcialidade. A fim de minimizar erros de seleção e extração, o processo de seleção foi realizado de forma iterativa de forma que quando ocorreu dúvida na aplicação de algum critério, o estudo não foi eliminado e passou para a próxima fase. Além disso, o processo de seleção foi realizado de forma colaborativa pelo autor e por um colaborador de forma que conflitos foram discutidos e solucionados pelos mesmos em conjunto com a orientadora. Dessa forma, objetivou-se atenuar as ameaças devido ao viés pessoal na compreensão do estudo.
+        
+        \emph{Ameaças à validade externa:} está relacionada ao grau em que os estudos primários serão representativos para o tópico de revisão. Se tratando de uma revisão da literatura, a validade externa depende da literatura identificada: se a literatura identificada não é valida externamente, tampouco a síntese do seu conteúdo é citada. Esta ameaça foi mitigada devido a utilização do critério de exclusão para eliminar, da pesquisa, os estudos provenientes de literatura cinza. Além disso, para mitigar as ameaças externas, o protocolo de pesquisa foi definido iterativamente e, validado, com o consenso do autor, do colaborador e da orientadora.  
+        
+        \emph{Ameaças à validade de conclusão}: A metodologia descrita por \cite{kitchenham} assume que nem todos os estudos primários relevantes possam vir a ser identificados. Para amenizar os efeitos dessa ameaça, o processo da revisão foi cuidadosamente elaborado e discutido pelos autores para minimizar o risco de exclusão estudos relevantes. Outro método empregado foi utilizar expressões e palavras sinônimas para os constructos dessa revisão sistemática, essa técnica objetiva uma maior cobertura de estudos possivelmente importantes a partir da pesquisa automática. Além disso, o processo de seleção do estudo foi conduzido em paralelo e de forma independente pelo aluno e pelo colaborador. Posteriormente, os resultados foram harmonizados para mitigar o viés pessoal na seleção do estudo causado por revisores individuais. Finalmente, a orientadora supervisionou esse processo.
+        
+        Para minimizar ameaças no processo de seleção dos estudos calculou-se um índice de concordância na etapa de classificação de artigos, feito junto a um colaborador e o autor do estudo, Os resultados obtidos foram satisfatórios visto que o menor número de concordância obtido foi 85\% e estão ilustrados na Tabela \ref{tab:concord}.
+        
+        
+        \begin{table}[h!]
+        \caption{Índice de concordância}
+        \label{tab:concord}
+\begin{tabular}{|l|l|l|l|l|l|}
+\hline
+\textbf{Base} & \textbf{Artigos} & \textbf{Duplicados} & \textbf{Autor Rejeitou} & \textbf{Colaborador Rejeitou} & \textbf{Concordância} \\ \hline
+ACM           & 8                & 3                   & 4                      & 4                           & 100\%                 \\ \hline
+IEEE          & 211              & 17                  & 161                    & 163                         & 92,2\%                \\ \hline
+SCIENCE       & 324              & 16                  & 274                    & 255                         & 85,7                  \\ \hline
+SCOPUS        & 317              & 41                  & 241                    & 220                         & 90,4                  \\ \hline
+\end{tabular}
+ \legend{Fonte: Elaborado pelo autor}
+\end{table}
+        
+        
+        
+        
+O próximo capítulo apresenta a condução da revisão sistemática.      
+
+\newpage
+
+\begin{comment}ou mapeamento sistematico
+%bolsista
+\begin{alineascomponto}
+    \item Escolha de trabalhos;
+    \item Definição dos critérios;
+    \item Identificação se existe algum fator;
+    \item Classificação dos fatores;
+    \item Construção do modelo de classificação;
+    \item Validação do modelo;
+
+\end{alineascomponto}
+
+%, lembrando que alguns passos serão executados em duas partes, duas pessoas diferentes para obtenção de dados mais confiáveis e maior credibilidade.
+
+\section{Escolha de trabalhos}
+
+Para que um trabalho seja escolhido e relacionado será feita uma primeira triagem selecionando entre trabalhos relacionados á desenvolvimento de software e coletando os que possuem palavras-chave que estejam diretamente relacionadas com o tema, abrangendo também outras palavras chaves que poderão ser úteis para a coleta dos fatores mesmo que no devido trabalho não haja um relacionamento explícito.
+
+Palavras chaves diretas:
+\begin{itemize}
+    \item Comunicação
+    \item Problemas de comunicação 
+    \item Otimização de comunicação
+    \item Comunicação de requisitos
+    \item Engenharia de requisitos 
+    \item Artefatos de requisitos
+    \item Boas práticas
+\end{itemize}
+
+Nos trabalhos com as seguintes palavras chaves será buscado se há relacionamento mesmo que indireto com comunicação
+
+Palavras chaves de relacionamento indireto:
+\begin{itemize}
+    \item Melhoria de processo 
+    \item Metodologias de otimização
+    \item Levantamento de boas práticas
+\end{itemize}
+
+
+\subsection{Definição dos critérios}
+
+Os critérios de seleção são descritos como algo que afeta diretamente ou indiretamente a comunicação de requisitos independente do que se trata.
+
+Critérios:
+
+\begin{itemize}
+    \item Afeta positivamente a comunicação ?
+    \item Afeta negativamente a comunicação ?
+    \item Otimiza o processo de comunicação ?
+    \item Ocasiona ruído de comunicação ? 
+    \item Descreve prática relacionado a comunicação ?
+    \item Descreve metodologia relacionado a comunicação ?
+\end{itemize}
+
+\section{Identificação se existe algum fator}
+
+Com os critérios de seleção definidos iremos verificar se o trabalho selecionado  descreve algum problema, melhoria, otimização ou identifica algo que está relacionado direto ou indiretamente a comunicação inserido no contexto do desenvolvimento de software, se sim iremos decidir se  tal informação é um fator que pode influenciar no processo de comunicação, ressaltando que para a informação seja selecionada é necessário que atenda a um ou mais dos critérios descritos na etapa anterior.
+
+\section{Classificação dos fatores}
+
+Com os fatores selecionados será feito então uma análise individual entre os fatores para identificar se a ocorrência do mesmo auxilia, impede, melhora ou piora a comunicação. 
+
+\section{Avaliação de qualidade} 
+
+A avaliação da qualidade é crítica em uma revisão sistemática para investigar se diferenças de qualidade nos artigos selecionados fornecem uma explicação para as diferenças nos resultados obtidos \cite{kitchenham}. Seguindo as diretrizes desses autores, este trabalho considera que a qualidade se relaciona com a medida em que o estudo minimiza o viés e maximiza a validade interna e externa.
+
+A avaliação da qualidade dos artigos selecionados será realizada por meio de uma técnica de pontuação para avaliar a credibilidade, completude e relevância dos estudos selecionados. Os artigos serão avaliados em relação a um conjunto de 20 critérios de qualidade proposto por \cite{vilela2017integration}.
+
+O trabalho de diferencia os estudos em cinco categorias: artigos de avaliação (Evaluation Research Papers - EVA); artigos de validação (Validation Research Papers - VAL); Propostas de solução (Solution Proposal Papers - SOL); Relatos de experiência (Experience Papers - EXP); e artigos de opinião (Opinion Papers - OP). Os critérios são descritos na Tabela \ref{tab:quality}.
+
+Cada critério da avaliação de qualidade possui três
+respostas possíveis: ``Sim" (pontuação = 1), ``Parcialmente'' (pontuação = 0,5) ou ``Não'' (pontuação = 0). Consequentemente, o grau de qualidade de um artigo é calculado considerando a soma das pontuações das respostas para as questões relacionadas ao seu tipo de pesquisa. A maior pontuação que um artigo poderá obter será 100\% ou seja 20 pontos, e a pontuação mínima para o artigo ser analisado nessa revisão sistemática será de 50\%, ou seja 10 pontos.
+
+\begin{table*}[h!]
+ \centering
+     \scriptsize
+ \caption{Critérios de avaliação da qualidade do estudo.}
+ \begin{tabular}{p{10cm}p{0.5cm}p{0.5cm}p{0.5cm}p{0.5cm}p{0.5cm}}
+ \hline
+ \textbf{Critério} & \textbf{Eva}	& \textbf{Val} & \textbf{Sol} & \textbf{Exp} & \textbf{Op}\\
+ \hline
+ Q1. Possui uma declaração clara dos objetivos da pesquisa? &x	&x	&x	&x\\
+ \hline
+Q2. A técnica proposta é  descrita claramente? & & &x	& \\
+ \hline
+ Q3. Há uma descrição adequada do contexto (indústria, ambiente de laboratório, produtos utilizados e assim por diante) em que a pesquisa foi realizada? 	&x	&x	& & \\
+ \hline	
+Q4. Os tratamentos foram alocados aleatoriamente? &	x & & & 	\\
+ \hline		
+Q5. A amostra é representativa do público para a qual os resultados serão generalizados? &x	&x	& & \\
+ \hline	
+Q6. Havia algum grupo de controle presente com o qual os tratamentos pudessem ser comparados, se aplicáveis?	&x	& & &	\\
+ \hline	
+Q7. Caso tenha um grupo de controle, os participantes são semelhantes aos do grupo de tratamento em termos de variáveis que podem afetar os resultados obtidos? 	&x	& & &			\\
+ \hline
+Q8. A análise de dados foi rigorosa o suficiente?	&x	&x	& & \\
+ \hline	
+Q9. Existe discussão sobre os resultados do estudo? 	&x	&x	&x &\\
+ \hline	
+Q10. As limitações do artigo são explicitamente discutidas? &x	&x	&x	&\\
+ \hline
+Q11. As lições aprendidas são interessantes? & & & &x\\
+ \hline
+Q12.  O artigo é relevante para os profissionais da indústria?	&x	&x	&x	&x\\
+ \hline
+Q13. Há discussão suficiente sobre trabalhos relacionados? (As técnicas concorrentes são discutidas e comparadas com a técnica atual?)	&x	&x	&x	&\\
+ \hline
+Q14. Os participantes do estudo ou unidades de observação são descritos adequadamente? Por exemplo, experiência em Engenharia de Software, tipo (estudante, profissional, consultor), nacionalidade, experiência em tarefas e outras variáveis relevantes. &x	&x & &\\
+ \hline		
+Q15. Existe evidências de cuidados com as considerações éticas?	&x	&x	& &	\\
+ \hline
+Q16. O estudo amplia suficientemente o conhecimento sobre ferramentas colaborativas no desenvolvimento do software?	&x	&x	&x	&x\\
+ \hline	
+Q17. O posicionamento sobre o tema é adequado?	&	&	&	& & x\\
+ \hline	
+Q18. É provável que provoque discussão sobre o tema?	&	& &  &	&x\\
+ \hline	
+Q19. Quão bem a diversidade de perspectiva e o contexto foram explorados? 	&	&	&	& & x\\
+ \hline	
+Q20. Quão claras são as hipóteses/concepções teóricas/valores que moldaram as configurações e as opiniões descritas?	&	&	&	& & x\\
+ \hline
+ \end{tabular}%
+ \label{tab:quality}%
+\end{table*}%
+
+\section{Procedimento para seleção de estudos}
+
+O procedimento de seleção de estudos, apresentado na Figura consistirá em cinco etapas principais. Na primeira, os estudos serão consultados e obtidos por meio de busca automática usando a \emph{string} de pesquisa nas bases de dados apresentadas na Tabela \ref{tab:bases}. Os resultados das buscas serão armazenados na ferramenta Parsifal.
+
+A segunda etapa consistirá na eliminação de artigos duplicados. Em seguida, no passo 3, haverá a seleção dos estudos primários obtidos na etapa anterior por meio da leitura de título e \emph{abstract} usando os critérios de inclusão e exclusão descritos na Seção \ref{sec:criterios}. Se houver dados insuficientes ou dúvidas, o artigo seguirá para o próximo passo.
+
+O quarto passo consistirá na leitura completa dos artigos para responder as perguntas de pesquisa descritas na Seção \ref{sec:perguntas} usando o formulário de extração da Tabela \ref{}.
+
+Finalmente, será realizada a avaliação da qualidade dos artigos usando os critérios da Tabela \ref{tab:quality}.
+
+\section{Ameaças à validade}
+
+We used the categorization of threats presented by Wholin et. al \cite{Wohlin2000}, which includes four types of validity threats, namely, conclusion, internal, construct, and external validity threats. 
+
+\emph{Construct validity}: Construct validity is related to generalization of the result to the
+concept or theory behind the study execution \cite{Wohlin2000}. Aiming to minimize threats of this nature, we used many synonyms for the main constructs in this review: ``safety-critical systems'', ``requirements engineering'', ``safety requirements'', and ``communication''. 
+
+\emph{Internal validity} threats are related to possible wrong conclusion about causal relationships between treatment and outcome \cite{Wohlin2000}. The primary objective of conducting a SLR is to minimize internal validity threats in the research. Decisões subjetivas podem ocorrer durante a seleção de artigos e extração de dados uma vez que é comum estudos primários não fornecerem uma descrição clara ou objetivos e resultados apropriados, dificultando a aplicação objetiva dos critérios de inclusão/exclusão ou a imparcialidade. A fim de minimizar erros de seleção e extração, o processo de seleção será realizado de forma iterativa de forma que quando ocorrer dúvida na aplicação de algum critério, o estudo não será eliminado e passará para a próxima fase. Além disso, o processo de seleção será realizado de forma colaborativa pela aluno e por um colaborador de forma que conflitos sejam discutidos e solucionados pelos alunos em conjunto com a orientadora. Dessa forma, objetiva-se atenuar as ameaças devido ao viés pessoal na compreensão do estudo.
+
+\emph{External validity} is concerned with establishing the generalizability of the SLR results, which is related to the degree to which the primary studies are representative for the review topic. In the case of a literature review, the external validity depends on the identified literature: if the identified literature is not externally valid, neither is the synthesis of its content \cite{gasparic2016recommendation}. Esta ameaça será mitigada devido a utilização do critério de exclusão para eliminar, da pesquisa, os estudos provenientes de literatura cinza. Além disso, para mitigar as ameaças externas, o protocolo de pesquisa foi definido iterativamente e, validado, com o consenso da autora, do colaborador e da orientadora. Esta ameaça será mitigada devido a utilização do critério de exclusão para eliminar, da pesquisa, os estudos provenientes de literatura cinza. Além disso, para mitigar as ameaças externas, o protocolo de pesquisa foi definido iterativamente e, validado, com o consenso da autora, do colaborador e da orientadora.
+
+\emph{Conclusion validity}: The used methodology of Kitchenham and Charters \cite{kitchenham} already assumes that not all relevant primary studies that exist can be identified. nem todos os estudos primários que existem  relacionados à pesquisa podem ser identificados, sendo assim, para minimizar esse ameaça, o processo da revisão foi cuidadosamente elaborado e discutido pelos autores para minimizar o risco de exclusão
+estudos relevantes. Outro método empregado foi utilizar expressões e palavras sinônimas para os constructos dessa revisão sistemática, essa técnica objetiva uma maior cobertura de estudos possivelmente importantes a partir da pesquisa automática. Além disso, o processo de seleção do estudo será conduzido em paralelo e de forma independente entre autor e pelo colaborador. Posteriormente, os resultados serão harmonizados para mitigar o viés pessoal na seleção do estudo causado por revisores individuais. Finalmente, a orientadora supervisionará esse processo.
+
+\end{comment}

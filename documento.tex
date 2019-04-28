@@ -1,0 +1,257 @@
+% Para utilizar este template siga o tutorial disponível em http://www.biblioteca.ufc.br/images/arquivos/instrucoes_modelos/tutorial_sharelatex.pdf
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Você deve criar uma conta no ShareLatex. Depois,  %%
+%% vá nas opções no canto esquerdo superior da tela  %%
+%% e clique em "Copiar Projeto". Dê um novo nome pa- %%
+%% ra o projeto.                                     %%
+%%                                                   %%
+%% Os principais desenvolvedores deste template são: %%
+%%                                                   %%
+%%            Ednardo Moreira Rodrigues              %%
+%%     (Doutorando em Engenharia Elétrica - UFC)     %%
+%%                      &                            %%
+%%            Alan Batista de Oliveira               %%
+%%     (Graduando em Engenharia Elétrica - UFC)      %%
+%%                                                   %%
+%% Revisão:                                          %%
+%%                                                   %%
+%% - Eliene Maria Vieira de Moura;                   %%
+%% - Francisco Edvander Pires Santos;                %%
+%% - Izabel Lima dos Santos;                         %%
+%% - Juliana Soares Lima;                            %%
+%% - Kalline Yasmin Soares Feitosa.                  %%
+%%                                                   %%
+%% Colaboradores                                     %%
+%%                                                   %%
+%% -Andrei Bosco Bezerra Torres                      %% 
+%% (Professor - Sistemas e Mídias Digitais -         %%
+%% Instituto Universidade Virtual - UFC)             %%
+%% Tiago ALves Lima                                  %% 
+%% (Aluno de Mestrado em Eng. Elétrica)              %%
+%%                                                   %%
+%% Grande parte do trabalho foi adaptado do template %%
+%% da UECE elaborado por:                            %%
+%% Thiago Nascimento  (UECE)                         %%
+%% Project available on:                             %%
+%% https://github.com/thiagodnf/uecetex2             %%
+%%                                                   %%
+%% "Dúvidas, esclarecimentos ou sugestões podem ser  %%
+%% enviadas para o e-mail da Comissão de Serviços da %%
+%% Biblioteca Universitária:                         %%
+%%          bu@ufc.br ou bchleitor@ufc.br"           %%
+%%                                                   %%
+%% As últimas atualizações estão descritas no inicio %%
+%% do arquivo "README.md".                           %%
+%%                                                   %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[        
+    a4paper,          % Tamanho da folha A4
+    12pt,             % Tamanho da fonte 12pt
+    chapter=TITLE,    % Todos os capitulos devem ter caixa alta
+    section=Title,    % Todas as secoes devem ter caixa alta somente na primeira letra
+    subsection=Title, % Todas as subsecoes devem ter caixa alta somente na primeira letra
+    oneside,          % Usada para impressao em apenas uma face do papel
+    english,          % Hifenizacoes em ingles
+    spanish,          % Hifenizacoes em espanhol
+    brazil,           % Ultimo idioma eh o idioma padrao do documento
+    fleqn             % Coloca as equações alinhadas a esquerda
+]{abntex2}
+
+\input{lib/preambulo}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%                     ATENCAO                     %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%  Qual e o nivel do trabalho academico que voce esta 
+% escrevendo? Retire o simbolo "%" apenas de um dos 
+% quatro topicos abaixo refente ao nível do seu traba
+% -lho.
+
+\trabalhoacademico{tccgraduacao}
+%\trabalhoacademico{tccespecializacao}
+%\trabalhoacademico{dissertacao}
+%\trabalhoacademico{tese}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Define se o trabalho e uma qualificacao
+% Coloque 'nao' para versao final do trabalho
+
+\ehqualificacao{nao}
+
+% Remove as bordas vermelhas e verdes do PDF gerado
+% Coloque 'sim' pare remover
+
+\removerbordasdohyperlink{sim} 
+
+% Adiciona a cor Azul a todos os hyperlinks
+
+\cordohyperlink{nao}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%         Informacao sobre a instituicao          %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\ies{Universidade Federal do Ceará}
+\iessigla{UFC}
+\centro{Campus de Quixadá}
+%\departamento{Departamento de Xxxxxxxxx}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%        Informacao para TCC de Graduacao         %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\graduacaoem{Engenharia de Software}
+\habilitacao{bacharel} % Ou licenciado(a)
+
+% AVISO: Caso necessario alterar o texto de apresenta-
+% cao da Especializacao ir a pasta "lib", arquivo 
+% "ufctex.sty" na linha 502.
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%     Informacao para TCC de Especializacao       %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\especializacaoem{Yyyyyyyyy}
+
+% AVISO: Caso necessario alterar o texto de apresenta-
+% cao da Especializacao, ir a pasta "lib", arquivo 
+% "ufctex.sty" na linha 507.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%         Informacao para Dissertacao             %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\programamestrado{Programa de Pós-Graduação em Xxxxxxx}
+\nomedomestrado{Mestrado Acadêmico em Xxxxxxx}
+\mestreem{Engenharia Xxxxxx}
+\areadeconcentracaomestrado{Engenharia Xxxxxx}
+
+% AVISO: Caso necessario alterar o texto de apresenta-
+% cao da dissertacao, ir a pasta "lib", arquivo 
+% "ufctex.sty" na linha 511.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%               Informação para Tese              %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\programadoutorado{Programa de Pós-Graduação em Xxxxxx}
+\nomedodoutorado{Doutorado em Xxxxxxx}
+\doutorem{Engenharia Xxxxxx}
+\areadeconcentracaodoutorado{Engenharia Xxxxxxx}
+
+% AVISO: Caso necessario alterar o texto de apresenta-
+% cao da tese, ir a pasta "lib", arquivo "ufctex.sty" 
+% na linha 515.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%      Informacoes relacionadas ao trabalho       %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\autor{Caio Souza}
+\titulo{COMUNICAÇÃO DE REQUISITOS NO PROCESSO DE DESENVOLVIMENTO DE SOFTWARE: UM MODELO DE CLASSIFICAÇÃO DE FATORES}
+\data{2018}
+\local{Quixadá}
+
+% Exemplo: \dataaprovacao{01 de Janeiro de 2012}
+\dataaprovacao{\_\_/\_\_/\_\_\_\_.}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%           Informação sobre o Orientador         %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\orientador{ Profª Ma. Jéssyka Flavyanne Ferreira Vilela}
+\orientadories{Universidade Federal do Ceará (UFC)}
+%\orientadorcentro{Centro de Ciências e Tecnologia (CCT)}
+\orientadorfeminino{sim} % Coloque 'sim' se for do sexo feminino
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%          Informação sobre o Coorientador        %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Deixe o nome do coorientador em branco para remover do documento
+
+\coorientador{}
+\coorientadories{Universidade Coorientador (SIGLA)}
+\coorientadorcentro{Centro do Coorientador (SIGLA)}
+\coorientadorfeminino{nao} % Coloque 'sim' se for do sexo feminino
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%              Informação sobre a banca           %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Atenção! Deixe em branco o nome do membro da banca para remover da folha de aprovacao
+
+% Exemplo de uso:
+% \membrodabancadois{Prof. Dr. Fulano de Tal}
+% \membrodabancadoisies{Universidade Federal do Ceará - UFC}
+
+
+\membrodabancadois{Profª. Ma. Diana Braga Nogueira}
+\membrodabancadoiscentro{Faculdade de Filosofia Dom Aureliano Matos (FAFIDAM)}
+\membrodabancadoisies{Universidade Federal do Ceará (UFC)}
+\membrodabancatres{Prof. Me. Camilo Camilo Almendra }
+\membrodabancatrescentro{Centro de Ciências e Tecnologia (CCT)}
+\membrodabancatresies{Universidade Federal do Ceará (UFC)}
+
+\membrodabancacinco{Prof. Dr. Xxxxxxx Xxxxxx Xxxxxxx}
+\membrodabancacincocentro{Teste}
+\membrodabancacincoies{Universidade do Membro da Banca Cinco (SIGLA)}
+\membrodabancaseis{Prof. Dr. Xxxxxxx Xxxxxx Xxxxxxx}
+\membrodabancaseiscentro{}
+\membrodabancaseisies{Universidade do Membro da Banca Seis (SIGLA)}
+
+\begin{document}	
+
+	% Elementos pré-textuais
+	\imprimircapa
+	\imprimirfolhaderosto{}
+	\imprimirfichacatalografica{1-pre-textuais/ficha-catalografica}
+	%\imprimirerrata{elementos-pre-textuais/errata}
+	\imprimirfolhadeaprovacao
+	\imprimirdedicatoria{1-pre-textuais/dedicatoria}
+	\imprimiragradecimentos{1-pre-textuais/agradecimentos}
+	\imprimirepigrafe{1-pre-textuais/epigrafe}
+	\imprimirresumo{1-pre-textuais/resumo}
+	\imprimirabstract{1-pre-textuais/abstract}
+	\renewcommand*\listfigurename{Lista de Figuras} %Se você comentar esta linha o título da lista fica: LISTA DE ILUSTRAÇÕES
+	\imprimirlistadeilustracoes
+	\imprimirlistadetabelas
+	%\imprimirlistadequadros
+	%\imprimirlistadealgoritmos
+	%\imprimirlistadecodigosfonte
+	%\imprimirlistadeabreviaturasesiglas
+	%\imprimirlistadesimbolos{1-pre-textuais/lista-de-simbolos}   
+	\imprimirsumario
+	
+	\setcounter{table}{0}% Deixe este comando antes da primeira tabela.
+	
+	%Elementos textuais
+	\textual
+	\input{2-textuais/1-introducao}
+	\input{2-textuais/trabalhos-relacionados.tex}
+	\input{2-textuais/2-fundamentacao-teorica}
+	\input{2-textuais/3-metodologia}
+	\input{2-textuais/protocolo.tex}
+	\input{2-textuais/4-resultados}
+	\input{2-textuais/5-conclusao}
+	
+	%Elementos pós-textuais	
+	\bibliography{3-pos-textuais/referencias}
+%	\imprimirglossario	
+	%\imprimirapendices
+		% Adicione aqui os apendices do seu trabalho
+	%	\input{3-pos-textuais/apendices/apendice-a}
+	%	\input{3-pos-textuais/apendices/apendice-b}
+	%	\input{3-pos-textuais/apendices/apendice-c}
+	%	\input{3-pos-textuais/apendices/apendice-d}
+	%\imprimiranexos
+		% Adicione aqui os anexos do seu trabalho
+		%\input{3-pos-textuais/anexos/anexo-a}
+	%	\input{3-pos-textuais/anexos/anexo-b}		
+	%\imprimirindice
+
+\end{document}
